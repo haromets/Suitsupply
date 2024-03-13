@@ -33,7 +33,7 @@ public class PlaywrightFactory {
                 browser = playwright.webkit().launch(new BrowserType.LaunchOptions().setHeadless(false));
                 break;
             case "chrome":
-                browser = playwright.chromium().launch(new LaunchOptions().setChannel("chrome").setHeadless(false));
+                browser = playwright.chromium().launch(new LaunchOptions().setChannel("chrome").setHeadless(true));
                 break;
             default:
                 System.out.println("Please pass the right browser name.....");
