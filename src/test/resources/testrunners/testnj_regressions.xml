@@ -3,7 +3,7 @@
 <suite name="Suitsupply Regression Suite" thread-count="2" parallel= "tests" verbose="4">
 
     <listeners>
-            <listener class-name="com.suitSupply.listeners.ExtentReportListener"/>
+            <listener class-name="com.suitSupply.listeners.ExtentITestListener"/>
     </listeners>
     <test name="Suitsupply Home Page Test">
         <classes>

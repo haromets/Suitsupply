@@ -33,8 +33,9 @@
     <dependency>
       <groupId>com.aventstack</groupId>
       <artifactId>extentreports</artifactId>
-      <version>5.0.8</version>
+      <version>5.0.6</version>
     </dependency>
+
   </dependencies>
 
   <build>
@@ -78,6 +79,16 @@
         <plugin>
           <artifactId>maven-project-info-reports-plugin</artifactId>
           <version>3.0.0</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>3.0.0-M5</version>
+          <configuration>
+            <suiteXmlFiles>
+              <suiteXmlFile>src/test/resources/testrunners/testnj_regressions.xml</suiteXmlFile>
+            </suiteXmlFiles>
+          </configuration>
         </plugin>
       </plugins>
     </pluginManagement>
