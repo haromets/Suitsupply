@@ -17,7 +17,7 @@ public class HomePageTest extends BaseTest {
     @Test
     public void selectWeddingCollectionOption(){
         String actualWeddingCollectionTitle = homePage.selectWeddingCollection();
-        Assert.assertEquals(actualWeddingCollectionTitle, "  Men's Wedding Assortment | SUITSUPPLY The Netherlands");
+        Assert.assertEquals(actualWeddingCollectionTitle, "Men's Wedding Assortment | SUITSUPPLY The Netherlands");
     }
 
 //    @Test
